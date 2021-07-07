@@ -46,8 +46,8 @@ function setCalendarElements(table) {
         let element = '';
         let html_element = document.getElementById('row' + count);
         let dow = 0;
-        let html_class = 'calendar_date';
         row.forEach(td => {
+            let html_class = 'calendar_date';
             if (td != '') {
                 if (dow == 0) {
                     html_class += ' sunday';
