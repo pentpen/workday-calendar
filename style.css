@@ -1,0 +1,22 @@
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.calendar_date {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0.5rem;
+}
+
+.sunday {
+    background-color: tomato;
+}
+
+.saturday {
+    background-color: turquoise;
+}
