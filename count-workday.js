@@ -57,7 +57,7 @@ function setCalendarElements(table) {
                 }
                 element = element + `<td><button class="${html_class}">` + td + '</button></td>';
             } else {
-                element = element + '<td>' + td + '</td>';
+                element = element + '<td></td>';
             }
             dow++;
         });
