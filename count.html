@@ -43,7 +43,7 @@
                     </table>
                 </td>
                 <td>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="output" cols="30" rows="10"></textarea>
                     <button>button</button>
                 </td>
             </tr>
@@ -51,17 +51,17 @@
     </div>
     <script src="count-workday.js"></script>
     <script>
-        var date = new Date();
-        makeCalendar(date.getFullYear(), date.getMonth());
+        var baseDate = new Date();
+        makeCalendar(baseDate.getFullYear(), baseDate.getMonth());
 
         function addMonth() {
-            date.setMonth(date.getMonth() + 1);
-            makeCalendar(date.getFullYear(), date.getMonth());
+            baseDate.setMonth(baseDate.getMonth() + 1);
+            makeCalendar(baseDate.getFullYear(), baseDate.getMonth());
         }
 
         function subMonth() {
-            date.setMonth(date.getMonth() - 1);
-            makeCalendar(date.getFullYear(), date.getMonth());
+            baseDate.setMonth(baseDate.getMonth() - 1);
+            makeCalendar(baseDate.getFullYear(), baseDate.getMonth());
         }
     </script>
 </body>

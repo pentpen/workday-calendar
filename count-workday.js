@@ -55,7 +55,7 @@ function setCalendarElements(table) {
                 if (dow == 6) {
                     html_class += ' saturday';
                 }
-                element = element + `<td><button class="${html_class}">` + td + '</button></td>';
+                element = element + `<td><button class="${html_class}" onClick="clickBtn(event)">` + td + '</button></td>';
             } else {
                 element = element + '<td></td>';
             }
@@ -64,6 +64,11 @@ function setCalendarElements(table) {
         html_element.innerHTML = element;
         count++;
     })
+}
+
+function clickBtn(event) {
+    let date = new Date(baseDate.getFullYear(), baseDate.getMonth(), event.target.innerHTML);
+    document.getElementById("output").innerHTML = date;
 }
 
 function resetCalendarElements() {
